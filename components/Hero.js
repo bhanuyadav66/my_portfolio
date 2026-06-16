@@ -6,7 +6,6 @@ import { FaDownload } from "react-icons/fa";
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center px-6">
-
       <div className="max-w-5xl mx-auto">
 
         {/* Intro line */}
@@ -24,34 +23,35 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-         className="text-4xl md:text-6xl font-bold text-white"
+          className="text-4xl md:text-6xl font-bold text-white"
         >
           Allam Bhanu Prakash.
         </motion.h1>
 
-        {/* Big headline */}
+        {/* Sub-headline */}
         <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
           className="text-2xl md:text-3xl font-medium text-gray-400 mt-2"
         >
-        I build AI systems and full-stack web applications.
+          I build AI systems and full-stack web applications.
         </motion.h2>
 
-        {/* Description */}
+        {/* Description — the stray > after the className value was rendering
+            as a literal ">" character at the start of this paragraph. Fixed. */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="mt-4 text-gray-400 max-w-xl text-base md:text-lg leading-relaxed">
+          className="mt-4 text-gray-400 max-w-xl text-base md:text-lg leading-relaxed"
         >
-         Final-year CS (Data Science) student at Malla Reddy Engineering College,
-  Hyderabad. I ship production-deployed ML pipelines, RAG chatbots, and
-  full-stack apps — currently open to ML Engineer and Software Engineer roles.
+          Final-year CS (Data Science) student at Malla Reddy Engineering College,
+          Hyderabad. I ship production-deployed ML pipelines, RAG chatbots, and
+          full-stack apps — currently open to ML Engineer and Software Engineer roles.
         </motion.p>
 
-        {/* Buttons */}
+        {/* CTA buttons */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -64,7 +64,6 @@ export default function Hero() {
           >
             View Projects
           </a>
-
           <a
             href="/resume.pdf"
             target="_blank"
@@ -77,7 +76,6 @@ export default function Hero() {
         </motion.div>
 
       </div>
-
     </section>
   );
 }
