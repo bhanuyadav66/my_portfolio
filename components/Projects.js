@@ -6,6 +6,24 @@ import Reveal from "./Reveal";
 
 const projects = [
 {
+    title: "RAG Document Chatbot",
+    description:
+      "Production-deployed AI chatbot that answers questions over uploaded PDFs using Retrieval-Augmented Generation. Features SSE streaming, multi-document upload, markdown rendering, and source chunk viewer.",
+    tags: ["Python", "FastAPI", "LangChain", "FastEmbed", "Groq", "React", "Vite"],
+    github: "https://github.com/bhanuyadav66/Rag-chatbot",
+    live: "https://frontend-nine-gamma-15.vercel.app",
+    featured: true,
+  },
+  {
+    title: "Livestock Marketplace",
+    description:
+      "Full-stack marketplace for livestock buying/selling with real-time chat, geospatial search, and AI-powered recommendations. Built with Next.js, MongoDB, and Socket.IO.",
+    tags: ["Next.js", "MongoDB", "Socket.IO", "Node.js", "Geospatial APIs"],
+    github: "https://github.com/bhanuyadav66",
+    live: null,
+    featured: true,
+  },
+{
 title: "Road Accident Prediction Using Machine Learning",
 description:
 "Developed a machine learning system to predict road accident probability using environmental and traffic features. Compared multiple models including Random Forest, SVM, KNN and XGBoost to identify the most reliable predictive model.",
