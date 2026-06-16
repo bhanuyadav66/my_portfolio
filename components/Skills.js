@@ -22,21 +22,43 @@ import {
   SiGooglecloud
 } from "react-icons/si";
 
-const skills = [
-  { name: "Python", icon: <FaPython /> },
-  { name: "Java", icon: <FaJava /> },
-  { name: "SQL", icon: <FaDatabase /> },
-  { name: "TensorFlow", icon: <SiTensorflow /> },
-  { name: "PyTorch", icon: <SiPytorch /> },
-  { name: "Power BI", icon: <FaChartBar /> },
-  { name: "PostgreSQL", icon: <SiPostgresql /> },
-  { name: "MySQL", icon: <SiMysql /> },
-  { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "React", icon: <FaReact /> },
-  { name: "Node.js", icon: <FaNodeJs /> },
-  { name: "Git", icon: <FaGitAlt /> },
-  { name: "AWS", icon: <FaAws /> },
-  { name: "Google Cloud", icon: <SiGooglecloud /> }
+const skillGroups = [
+  {
+    label: "Languages",
+    accent: "bg-blue-900/40 text-blue-300 ring-1 ring-blue-700/50",
+    skills: ["Python", "Java", "JavaScript", "SQL"],
+  },
+  {
+    label: "ML / AI",
+    accent: "bg-purple-900/40 text-purple-300 ring-1 ring-purple-700/50",
+    skills: [
+      "TensorFlow", "PyTorch", "Scikit-learn", "LangChain",
+      "FastEmbed", "Pandas", "NumPy", "XGBoost", "Matplotlib", "Seaborn",
+    ],
+  },
+  {
+    label: "Web & APIs",
+    accent: "bg-green-900/40 text-green-300 ring-1 ring-green-700/50",
+    skills: [
+      "React", "Next.js", "Node.js", "FastAPI",
+      "Tailwind CSS", "Socket.IO", "REST APIs", "Streamlit",
+    ],
+  },
+  {
+    label: "Databases",
+    accent: "bg-yellow-900/40 text-yellow-300 ring-1 ring-yellow-700/50",
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "ChromaDB"],
+  },
+  {
+    label: "Cloud & DevOps",
+    accent: "bg-red-900/40 text-red-300 ring-1 ring-red-700/50",
+    skills: ["AWS", "Google Cloud", "Azure", "Vercel", "Render", "Docker", "Git"],
+  },
+  {
+    label: "AI Tooling",
+    accent: "bg-orange-900/40 text-orange-300 ring-1 ring-orange-700/50",
+    skills: ["Groq LLM", "RAG Pipelines", "LLM Integration", "Power BI"],
+  },
 ];
 
 export default function Skills() {
@@ -54,7 +76,7 @@ export default function Skills() {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 
-        {skills.map((skill,index)=>(
+        {skillGroups.map((skill,index)=>(
           <motion.div
             key={index}
             whileHover={{ scale:1.1 }}
