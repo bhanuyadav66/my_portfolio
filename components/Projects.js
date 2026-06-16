@@ -20,7 +20,7 @@ const projects = [
       "Full-stack marketplace for livestock buying/selling with real-time chat, geospatial search, and AI-powered recommendations. Built with Next.js, MongoDB, and Socket.IO.",
     tags: ["Next.js", "MongoDB", "Socket.IO", "Node.js", "Geospatial APIs"],
     github: "https://github.com/bhanuyadav66",
-    live: null,
+    live: "https://livestock-marketplace-six.vercel.app/",
     featured: true,
   },
   {
