@@ -50,10 +50,16 @@ export default function About() {
             B.Tech in Computer Science and Engineering – Data Science
           </p>
 
-          <p className="mt-6 text-gray-400 leading-relaxed">
-I am a final-year Computer Science student specializing in Data Science with a strong curiosity about how AI systems work and how data can be used to solve real-world problems. My interest in data began with exploring real-world datasets and discovering meaningful insights through analysis and visualization.
-</p>
+        // components/About.js — add this line to your About paragraph:
 
+<p className="text-gray-400 leading-relaxed">
+  I am a final-year B.Tech Computer Science (Data Science) student at
+  Malla Reddy Engineering College, Hyderabad, graduating in 2026 with a
+  CGPA of <span className="text-white font-medium">8.18</span>. I have
+  hands-on experience building full-stack applications and deploying ML
+  systems to production — including a live RAG chatbot backed by LangChain,
+  FastEmbed, and Groq.
+</p>
 <p className="mt-4 text-gray-400 leading-relaxed">
   I enjoy working with data pipelines, machine learning models, and visualization tools to turn raw data into actionable insights. 
   One of my most impactful projects is a 
