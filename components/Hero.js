@@ -100,7 +100,7 @@ export default function Hero() {
                 <FaGithub />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/allam-bhanu-yadav/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn profile"
@@ -109,7 +109,7 @@ export default function Hero() {
                 <FaLinkedin />
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:allambhanuprakash3413@gmail.com"
                 aria-label="Send email"
                 className="hover:text-cyan-400 transition"
               >
