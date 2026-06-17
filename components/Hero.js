@@ -1,11 +1,9 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center px-6">
+    <section id="hero" className="min-h-screen flex items-center px-6">
       <div className="max-w-5xl mx-auto">
 
         {/* Intro line */}
@@ -38,8 +36,7 @@ export default function Hero() {
           I build AI systems and full-stack web applications.
         </motion.h2>
 
-        {/* Description — the stray > after the className value was rendering
-            as a literal ">" character at the start of this paragraph. Fixed. */}
+        {/* Description */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
